@@ -57,10 +57,8 @@
       <div class="container">
         <h1>React D3 Library</h1>
         <p>A JavaScript library that will allow developers the ability to use D3 in React.</p>
-        <p><a class="btn btn-danger btn-lg" href="https://github.com/react-d3-library/react-d3-library/wiki" role="button" data-target="#myModal">Get Started &raquo;</a></p>
+        <p><a class="btn btn-danger btn-lg" href="https://github.com/react-d3-library/react-d3-library/wiki" role="button">Get Started &raquo;</a></p>
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        </div>
       </div>
     </div>
 
@@ -92,13 +90,143 @@
             <p>All of your D3 will now be compiled into React Elements which allows the ability to use React's diffing algorithm for full optimization</p>
           </div>
         </div>
-      <hr/>
+
+        <hr/>
+
+        <div class="components-info">
+
+          <div class="col-md-8">
+            <h3>React D3 Components</h3>
+            <p>A library that will allow developers the ability to reroute D3 output to React’s virtual DOM. React-D3-Library will compile your code into React components, and it also comes with a series of D3 template charts converted to React components for developers who are unfamiliar with D3. Not only do we build fully functional React components, but they utilize the power of D3 to automate scaling ranges, normalizing data, and constructing legends.</p>
+          </div>
+
+          <div class="col-md-4">
+            <h3>Templates</h3>
+            <p>All of your D3 will now be compiled into React Elements which allows the ability to use React's diffing algorithm for full optimization</p>
+          </div>
+
+          <div class="col-md-8">
+            <h3>Templates</h3>
+            <p>All of your D3 will now be compiled into React Elements which allows the ability to use React's diffing algorithm for full optimization</p>
+          </div>
+
+          <div class="col-md-4">
+            <h3>Templates</h3>
+            <p>All of your D3 will now be compiled into React Elements which allows the ability to use React's diffing algorithm for full optimization</p>
+          </div>
+        </div>
+
+        <div class="get-started col-md-12">
+
+          <div class="row">
+            <div class="col-md-5">
+              <h3>Get Started</h3>
+              <p>First off, install with:</p>
+              <p><code>npm install --save react-d3-library</code></p>
+              <p>Next, import into your React project:</p>
+              <p><code>const rd3 = require('react-d3-library');</code></p>
+              <p>or</p>
+              <p><code>import rd3 from 'react-d3-library'</code></p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">import</span> React from <span style="color: #0000FF">&#39;react&#39;</span>; 
+<span style="color: #000080; font-weight: bold">import</span> rd3 from <span style="color: #0000FF">&#39;react-d3-library&#39;</span>;
+</pre></div>
+            </div>
+          </div>
+
+      </div>
+
+        <div class="use-code col-md-12">
+
+          <div class="row">
+            <div class="col-md-8">
+              <h3>Use With Existing D3 Code</h3>
+              <p>Developers can now take their existing D3 code and use React-D3-Library to create React components. Below is an excerpt of using D3 to create a Bubble Chart with Mike Bostock's D3 code found <a href="https://bl.ocks.org/mbostock/4063269">here</a>.</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">var</span> div = document.createElement(<span style="color: #0000FF">&#39;div&#39;</span>);
+
+<span style="color: #000080; font-weight: bold">var</span> diameter = <span style="color: #0000FF">960</span>,
+    format = d3.format(<span style="color: #0000FF">&quot;,d&quot;</span>),
+    color = d3.scale.category20c();
+
+<span style="color: #000080; font-weight: bold">var</span> bubble = d3.layout.pack()
+    .sort(<span style="color: #000080; font-weight: bold">null</span>)
+    .size([diameter, diameter])
+    .padding(<span style="color: #0000FF">1.5</span>);
+
+<span style="color: #000080; font-weight: bold">var</span> svg = d3.select(div).append(<span style="color: #0000FF">&quot;svg&quot;</span>)
+    .attr(<span style="color: #0000FF">&quot;width&quot;</span>, diameter)
+    .attr(<span style="color: #0000FF">&quot;height&quot;</span>, diameter)
+    .attr(<span style="color: #0000FF">&quot;class&quot;</span>, <span style="color: #0000FF">&quot;bubble&quot;</span>);
+
+d3.json(<span style="color: #0000FF">&quot;flare.json&quot;</span>, <span style="color: #000080; font-weight: bold">function</span>(error, root) {
+  <span style="color: #000080; font-weight: bold">if</span> (error) <span style="color: #000080; font-weight: bold">throw</span> error;
+
+<span style="color: #000080; font-weight: bold">var</span> node = svg.selectAll(<span style="color: #0000FF">&quot;.node&quot;</span>)
+    .data(bubble.nodes(classes(flare))
+    .filter(<span style="color: #000080; font-weight: bold">function</span>(d) { <span style="color: #000080; font-weight: bold">return</span> !d.children; }))
+    .enter().append(<span style="color: #0000FF">&quot;g&quot;</span>)
+    .attr(<span style="color: #0000FF">&quot;class&quot;</span>, <span style="color: #0000FF">&quot;node&quot;</span>)
+    .attr(<span style="color: #0000FF">&quot;transform&quot;</span>, <span style="color: #000080; font-weight: bold">function</span>(d) { <span style="color: #000080; font-weight: bold">return</span> <span style="color: #0000FF">&quot;translate(&quot;</span> + d.x + <span style="color: #0000FF">&quot;,&quot;</span> + d.y + <span style="color: #0000FF">&quot;)&quot;</span>; });
+
+<span style="color: #008800; font-style: italic">//etc...</span>
+</pre></div>
+            </div>
+
+            <div class="use-code col-md-12">
+
+              <div class="row">
+                <div class="col-md-8">
+                  <h3>Just one more step</h3>
+                    <p>
+                    Use the <span class="hilight-code">componentDidMount()</span> React lifecycle method to make the state aware of your new D3 <span class="hilight-code"><strong>div</strong></span>.
+
+                    Then pass the state as props to the react-d3-library Component <span class="hilight-code">rd3.Component</span>.</p>
+                </div>
+                <div class="col-md-8">
+                  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">import</span> rd3 from <span style="color: #0000FF">&#39;react-d3-library&#39;</span>;
+<span style="color: #000080; font-weight: bold">const</span> RD3Component = rd3.Component;
+
+<span style="color: #000080; font-weight: bold">var</span> my_First_React_D3_Library_Component = React.createClass({
+
+  getInitialState: <span style="color: #000080; font-weight: bold">function</span>() {
+    <span style="color: #000080; font-weight: bold">return</span> {d3: <span style="color: #0000FF">&#39;&#39;</span>}
+  },
+
+  componentDidMount: <span style="color: #000080; font-weight: bold">function</span>() {
+    <span style="color: #000080; font-weight: bold">this</span>.setState({d3: div});
+  },
+
+  render: <span style="color: #000080; font-weight: bold">function</span>() {
+    <span style="color: #000080; font-weight: bold">return</span> (
+      &lt;div&gt;
+        &lt;RD3Component data={<span style="color: #000080; font-weight: bold">this</span>.state.d3} /&gt;
+      &lt;/div&gt;
+    )
+  }
+});
+</pre></div>
+                </div>
+                <div class="col-md-8">
+                  <br/>
+                  <p>And that's it!! Good Job!!
+                  Simple chart templates are also available under the rd3 namespace as shown below</p>
+                </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
       </div>
     </div>
 
     <footer>
       <div class="container">
-        <p><img src="" alt=""></p>
+        <p>License
+
+        MIT
+
+        Copyright (c) 2016 Andrew Burke, Danny Lee, Dave Loyst contributors</p>
       </div>
       <div id="scroll-top">
         <a href="#jumbotron"><i class="fa fa-3x fa-chevron-circle-up"></i></a>

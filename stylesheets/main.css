@@ -9,8 +9,12 @@ ul.nav, .jumbotron h1 {
   font-family: 'Open Sans', sans-serif;
 }
 
-.nav li {
-  color: white;
+.navbar li a{
+  color: #ddd !important;
+}
+
+.navbar li a:hover {
+  color: white !important;
 }
 
 .jumbotron {
@@ -41,7 +45,7 @@ ul.nav {
 
 .homepage {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -77,7 +81,29 @@ ul.nav {
 .homepage hr {
   border-top: 1px solid #e74c3c;
   width: 160px;
-  margin-top: 15px;
+  margin-top: 50px;
+}
+
+.components-info, .get-started, .use-code {
+  text-align: left;
+}
+
+.components-info h3 {
+  color: #333;
+}
+
+.components-info p, .get-started p, .use-code p {
+  color: #333;
+  font-size: 1.2em;
+}
+
+.components-info div {
+  margin-top: 5%;
+}
+
+.use-code .hilight-code {
+  font-size: 90%;
+  color: #c7254e;
 }
 
 #info-section {
