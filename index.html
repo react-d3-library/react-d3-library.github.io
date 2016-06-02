@@ -132,7 +132,7 @@
 
 <span style="color: #000080; font-weight: bold">var</span> diameter = <span style="color: #0000FF">960</span>,
     format = d3.format(<span style="color: #0000FF">&quot;,d&quot;</span>),
-    color = d3.scale.category20c();
+    color = d3.scale.category20c(); 
 
 <span style="color: #000080; font-weight: bold">var</span> bubble = d3.layout.pack()
     .sort(<span style="color: #000080; font-weight: bold">null</span>)
@@ -172,6 +172,9 @@ d3.json(<span style="color: #0000FF">&quot;flare.json&quot;</span>, <span style=
  <div class="row">
         <div class="get-started col-md-8">
           <h3>Just one more step</h3>
+
+            <h4>Make sure to include our React Component.</h4>
+            <h4>You will be passing your built up div to it as props.</h4>
             <p>
               Use the <span class="hilight-code">componentDidMount()</span> React lifecycle method to make the state aware of your new D3 <span class="hilight-code"><strong>div</strong></span>.
 
