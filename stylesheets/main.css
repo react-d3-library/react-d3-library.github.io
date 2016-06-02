@@ -18,10 +18,11 @@ ul.nav, .jumbotron h1 {
 }
 
 .jumbotron {
+  padding: 80px 0 !important;
   text-align: center;
   background-color: #2d2d2d;
   color: white;
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 
 .jumbotron h1 {
@@ -34,6 +35,10 @@ ul.nav, .jumbotron h1 {
   padding: 0 50px;
 }
 
+.homepage a {
+  margin-top: 10px;
+  color: white !important;
+}
 
 ul.nav {
   font-size: 13px;
@@ -52,7 +57,7 @@ ul.nav {
 .homepage h2, .homepage h3 {
   color: #e74c3c;
   font-family: 'Arvo', courier, serif;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .homepage h2 {
@@ -97,11 +102,15 @@ ul.nav {
   font-size: 1.2em;
 }
 
+.get-started {
+  margin-top: 20px;
+}
+
 .components-info div {
   margin-top: 5%;
 }
 
-.use-code .hilight-code {
+.hilight-code {
   font-size: 90%;
   color: #c7254e;
 }
@@ -120,6 +129,10 @@ ul.nav {
   color: #333;
 }
 
+.template-code {
+  font-size: 1.1em;
+}
+
 footer {
   background-color: #f74c3c;
   padding-top: 150px;
@@ -131,7 +144,7 @@ footer {
 /*Responsive Styling*/
 
 /* Medium devices (desktops, 992px and up) */
-@media (max-width: 1199px) { 
+@media (max-width: 1199px) {
 
   .jumbotron h1 {
     font-size: 56px;
@@ -140,7 +153,7 @@ footer {
 
 }
 
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
 
   .jumbotron h1 {
     font-size: 44px;
@@ -157,7 +170,7 @@ footer {
 
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 
   .jumbotron h1 {
     font-size: 24px;

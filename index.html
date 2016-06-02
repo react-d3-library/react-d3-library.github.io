@@ -20,7 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="stylesheets/main.css" rel="stylesheet">
 
-    
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -58,7 +58,6 @@
         <h1>React D3 Library</h1>
         <p>A JavaScript library that will allow developers the ability to use D3 in React.</p>
         <p><a class="btn btn-danger btn-lg" href="https://github.com/react-d3-library/react-d3-library/wiki" role="button">Get Started &raquo;</a></p>
-        <!-- Modal -->
       </div>
     </div>
 
@@ -79,7 +78,7 @@
               <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
             </span>
             <h3>Flexibility</h3>
-            <p>All of your D3 will now be compiled into React Elements which allows the ability to use React's diffing algorithm for full optimization</p>
+            <p>React D3 Library also supports transitions, animations, tooltips, zoom, brush, event listeners, and the list goes on.</p>
          </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -87,60 +86,48 @@
               <i class="fa fa-area-chart  fa-stack-1x fa-inverse"></i>
             </span>
             <h3>Templates</h3>
-            <p>All of your D3 will now be compiled into React Elements which allows the ability to use React's diffing algorithm for full optimization</p>
+            <p>It's a simple process to create D3 elements in React and because of this we are able to make contributing or using templates easy.</p>
           </div>
         </div>
 
         <hr/>
 
-        <div class="components-info">
-
+      <div class="row">
+        <div class="get-started">
           <div class="col-md-8">
             <h3>React D3 Components</h3>
-            <p>A library that will allow developers the ability to reroute D3 output to React’s virtual DOM. React-D3-Library will compile your code into React components, and it also comes with a series of D3 template charts converted to React components for developers who are unfamiliar with D3. Not only do we build fully functional React components, but they utilize the power of D3 to automate scaling ranges, normalizing data, and constructing legends.</p>
+            <p>A library that will allow developers the ability to reroute D3's output to React’s virtual DOM. React-D3-Library will compile your code into React components, and it also comes with a series of D3 template charts converted to React components for developers who are unfamiliar with D3. Not only do we build fully functional React components, but they utilize the power of D3 to automate scaling ranges, normalizing data, and constructing legends.</p>
           </div>
 
           <div class="col-md-4">
-            <h3>Templates</h3>
-            <p>All of your D3 will now be compiled into React Elements which allows the ability to use React's diffing algorithm for full optimization</p>
+            <h3>Contributing</h3>
+            <p>We are a open source library, so feel free to contribute or post any suggestions/ideas for the library!</p>
           </div>
 
-          <div class="col-md-8">
-            <h3>Templates</h3>
-            <p>All of your D3 will now be compiled into React Elements which allows the ability to use React's diffing algorithm for full optimization</p>
-          </div>
+        </div>
+      </div>
 
-          <div class="col-md-4">
-            <h3>Templates</h3>
-            <p>All of your D3 will now be compiled into React Elements which allows the ability to use React's diffing algorithm for full optimization</p>
+
+        <div class="row">
+          <div class="get-started col-md-5">
+            <h3>Get Started</h3>
+            <p>First off, install with:</p>
+            <p><code>npm install --save react-d3-library</code></p>
+            <p>Next, import into your React project:</p>
+            <p><code>const rd3 = require('react-d3-library');</code></p>
+            <p>or</p>
+            <p><code>import rd3 from 'react-d3-library'</code></p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">import</span> React from <span style="color: #0000FF">&#39;react&#39;</span>;
+<span style="color: #000080; font-weight: bold">import</span> rd3 from <span style="color: #0000FF">&#39;react-d3-library&#39;</span>;
+</pre></div>
           </div>
         </div>
 
-        <div class="get-started col-md-12">
 
-          <div class="row">
-            <div class="col-md-5">
-              <h3>Get Started</h3>
-              <p>First off, install with:</p>
-              <p><code>npm install --save react-d3-library</code></p>
-              <p>Next, import into your React project:</p>
-              <p><code>const rd3 = require('react-d3-library');</code></p>
-              <p>or</p>
-              <p><code>import rd3 from 'react-d3-library'</code></p>
-<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">import</span> React from <span style="color: #0000FF">&#39;react&#39;</span>; 
-<span style="color: #000080; font-weight: bold">import</span> rd3 from <span style="color: #0000FF">&#39;react-d3-library&#39;</span>;
-</pre></div>
-            </div>
-          </div>
-
-      </div>
-
-        <div class="use-code col-md-12">
-
-          <div class="row">
-            <div class="col-md-8">
-              <h3>Use With Existing D3 Code</h3>
-              <p>Developers can now take their existing D3 code and use React-D3-Library to create React components. Below is an excerpt of using D3 to create a Bubble Chart with Mike Bostock's D3 code found <a href="https://bl.ocks.org/mbostock/4063269">here</a>.</p>
+      <div class="row">
+        <div class="get-started col-md-8">
+          <h3>Use With Existing D3 Code</h3>
+          <p>Developers can now take their existing D3 code and use React-D3-Library to create React components. Below is an excerpt of using D3 to create a Bubble Chart with Mike Bostock's D3 code found <a href="https://bl.ocks.org/mbostock/4063269">here</a>.</p>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">var</span> div = document.createElement(<span style="color: #0000FF">&#39;div&#39;</span>);
 
 <span style="color: #000080; font-weight: bold">var</span> diameter = <span style="color: #0000FF">960</span>,
@@ -169,20 +156,29 @@ d3.json(<span style="color: #0000FF">&quot;flare.json&quot;</span>, <span style=
 
 <span style="color: #008800; font-style: italic">//etc...</span>
 </pre></div>
-            </div>
+        </div>
+        <div class="get-started col-md-4">
+          <h3>Don't forget!</h3>
+          <p>We need to create a div element for D3 to build upon before converting it to a React component,
+            <span class="hilight-code">var div = document.createElement('div');</span>
+            and this <span class="hilight-code">div</span> is what we will have D3 select.
+            We change the selection from
+            <span class="hilight-code">d3.select('body')</span>
+            to our new div variable.
+            <span class="hilight-code">d3.select(div)</span>
+          </p>
+        </div>
+      </div>
+ <div class="row">
+        <div class="get-started col-md-8">
+          <h3>Just one more step</h3>
+            <p>
+              Use the <span class="hilight-code">componentDidMount()</span> React lifecycle method to make the state aware of your new D3 <span class="hilight-code"><strong>div</strong></span>.
 
-            <div class="use-code col-md-12">
-
-              <div class="row">
-                <div class="col-md-8">
-                  <h3>Just one more step</h3>
-                    <p>
-                    Use the <span class="hilight-code">componentDidMount()</span> React lifecycle method to make the state aware of your new D3 <span class="hilight-code"><strong>div</strong></span>.
-
-                    Then pass the state as props to the react-d3-library Component <span class="hilight-code">rd3.Component</span>.</p>
-                </div>
-                <div class="col-md-8">
-                  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">import</span> rd3 from <span style="color: #0000FF">&#39;react-d3-library&#39;</span>;
+              Then pass the state as props to the react-d3-library Component <span class="hilight-code">rd3.Component</span>.
+            </p>
+              <!-- HTML generated using hilite.me -->
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">import</span> rd3 from <span style="color: #0000FF">&#39;react-d3-library&#39;</span>;
 <span style="color: #000080; font-weight: bold">const</span> RD3Component = rd3.Component;
 
 <span style="color: #000080; font-weight: bold">var</span> my_First_React_D3_Library_Component = React.createClass({
@@ -204,6 +200,31 @@ d3.json(<span style="color: #0000FF">&quot;flare.json&quot;</span>, <span style=
   }
 });
 </pre></div>
+<!-- HTML generated using hilite.me -->
+        </div>
+        <div class="get-started col-md-4">
+          <h3>Also we have templates!</h3>
+          <p>
+            Simple chart templates are also available under the rd3 namespace as shown below<br>
+          </p>
+          <code><strong><span class="hilight-code template-code">var ScatterPlot = rd3.createScatterPlot;</span></strong></code><br>
+          <code><strong><span class="hilight-code template-code">var PieChart = rd3.createPieChart;</span></strong></code><br>
+          <code><strong><span class="hilight-code template-code">var LineChart = rd3.createLineChart;</span></strong></code><br>
+          <code><strong><span class="hilight-code template-code">var AreaChart = rd3.createAreaChart;</span></strong></code><br>
+          <code><strong><span class="hilight-code template-code">var BarChart = rd3.createBarChart;</span></strong></code><br>
+          <p><a class="btn btn-danger btn-md" href="https://github.com/react-d3-library/react-d3-library/wiki" role="button">Go to templates &raquo;</a></p>
+        </div>
+      </div>
+
+
+            <div class="use-code col-md-12">
+
+              <div class="row">
+                <div class="get-started col-md-8">
+
+                </div>
+                <div class="col-md-8">
+
                 </div>
                 <div class="col-md-8">
                   <br/>
