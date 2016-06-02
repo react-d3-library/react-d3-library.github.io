@@ -15,12 +15,18 @@ ul.nav, .jumbotron h1 {
 
 .navbar li a:hover {
   color: white !important;
+  cursor: pointer;
+
+}
+
+.navbar-brand {
+  color: #ddd !important;
 }
 
 .jumbotron {
-  padding: 80px 0 !important;
+  padding: 20px 0 !important;
   text-align: center;
-  background-color: #2d2d2d;
+  background-color: #222;
   color: white;
   margin-bottom: 0px !important;
 }
@@ -79,7 +85,6 @@ ul.nav {
 
 .homepage a:hover {
   color: #e74c3c;
-  text-decoration: none;
   opacity: .8;
 }
 
@@ -135,7 +140,7 @@ ul.nav {
 
 footer {
   background-color: #f74c3c;
-  padding-top: 150px;
+  padding-top: 70px;
   padding-bottom: 30px;
   position: relative;
 }
@@ -168,6 +173,12 @@ footer {
     padding-bottom: 20px;
   }
 
+  .logo {
+    width: 85%;
+    height: 85%;
+  }
+
+
 }
 
 @media (max-width: 767px) {
@@ -189,7 +200,9 @@ footer {
     font-size: 18px;
   }
 
-  .footer img {
-    width: 80%;
+  .logo {
+    width: 75%;
+    height: 75%;
   }
+
 }
