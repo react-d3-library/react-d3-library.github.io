@@ -173,6 +173,12 @@ footer {
     padding-bottom: 20px;
   }
 
+  .logo {
+    width: 85%;
+    height: 85%;
+  }
+
+
 }
 
 @media (max-width: 767px) {
@@ -192,6 +198,11 @@ footer {
 
   .homepage p {
     font-size: 18px;
+  }
+
+  .logo {
+    width: 75%;
+    height: 75%;
   }
 
 }
