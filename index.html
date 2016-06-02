@@ -184,29 +184,30 @@ d3.json(<span style="color: #0000FF">&quot;flare.json&quot;</span>, <span style=
               Then pass the state as props to the react-d3-library Component <span class="hilight-code">rd3.Component</span>.
             </p>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">import</span> rd3 from <span style="color: #0000FF">&#39;react-d3-library&#39;</span>;
-<span style="color: #000080; font-weight: bold">import</span> node from <span style="color: #0000FF">&#39;d3file&#39;</span>;
+<span style="color: #000080; font-weight: bold">import</span> node from <span style="color: #0000FF">&#39;d3file&#39;</span>
 <span style="color: #000080; font-weight: bold">const</span> RD3Component = rd3.Component;
 
-<span style="color: #000080; font-weight: bold">class</span> my_First_React_D3_Library_Component <span style="color: #000080; font-weight: bold">extends</span> React.Component {
+<span style="color: #000080; font-weight: bold">var</span> my_First_React_D3_Library_Component = React.createClass({
 
-  constructor(props) {
-    <span style="color: #000080; font-weight: bold">super</span>(props);
-    <span style="color: #000080; font-weight: bold">this</span>.state = {d3: <span style="color: #0000FF">&#39;&#39;</span>}
-  }
+  getInitialState: <span style="color: #000080; font-weight: bold">function</span>() {
+    <span style="color: #000080; font-weight: bold">return</span> {d3: <span style="color: #0000FF">&#39;&#39;</span>}
+  },
 
-  componentDidMount() {
+  componentDidMount: <span style="color: #000080; font-weight: bold">function</span>() {
     <span style="color: #000080; font-weight: bold">this</span>.setState({d3: node});
-  }
+  },
 
-  render() {
+  render: <span style="color: #000080; font-weight: bold">function</span>() {
     <span style="color: #000080; font-weight: bold">return</span> (
       &lt;div&gt;
         &lt;RD3Component data={<span style="color: #000080; font-weight: bold">this</span>.state.d3} /&gt;
       &lt;/div&gt;
     )
   }
-};
+});
 </pre></div>
+<!-- HTML generated using hilite.me -->
+        </div>
         <div class="get-started col-md-4">
           <h3>Also we have templates!</h3>
           <p>
