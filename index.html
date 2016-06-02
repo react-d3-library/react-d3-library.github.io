@@ -128,7 +128,7 @@
         <div class="get-started col-md-8">
           <h3>Use With Existing D3 Code</h3>
           <p>Developers can now take their existing D3 code and use React-D3-Library to create React components. Below is an excerpt of using D3 to create a Bubble Chart with Mike Bostock's D3 code found <a href="https://bl.ocks.org/mbostock/4063269">here</a>.</p>
-<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">var</span> div = document.createElement(<span style="color: #0000FF">&#39;div&#39;</span>);
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">var</span> node = document.createElement(<span style="color: #0000FF">&#39;div&#39;</span>);
 
 <span style="color: #000080; font-weight: bold">var</span> diameter = <span style="color: #0000FF">960</span>,
     format = d3.format(<span style="color: #0000FF">&quot;,d&quot;</span>),
@@ -139,7 +139,7 @@
     .size([diameter, diameter])
     .padding(<span style="color: #0000FF">1.5</span>);
 
-<span style="color: #000080; font-weight: bold">var</span> svg = d3.select(div).append(<span style="color: #0000FF">&quot;svg&quot;</span>)
+<span style="color: #000080; font-weight: bold">var</span> svg = d3.select(node).append(<span style="color: #0000FF">&quot;svg&quot;</span>)
     .attr(<span style="color: #0000FF">&quot;width&quot;</span>, diameter)
     .attr(<span style="color: #0000FF">&quot;height&quot;</span>, diameter)
     .attr(<span style="color: #0000FF">&quot;class&quot;</span>, <span style="color: #0000FF">&quot;bubble&quot;</span>);
@@ -156,6 +156,7 @@ d3.json(<span style="color: #0000FF">&quot;flare.json&quot;</span>, <span style=
 
 <span style="color: #008800; font-style: italic">//etc...</span>
 </pre></div>
+
         </div>
         <div class="get-started col-md-4">
           <h3>Don't forget!</h3>
@@ -180,8 +181,8 @@ d3.json(<span style="color: #0000FF">&quot;flare.json&quot;</span>, <span style=
 
               Then pass the state as props to the react-d3-library Component <span class="hilight-code">rd3.Component</span>.
             </p>
-              <!-- HTML generated using hilite.me -->
-              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">import</span> rd3 from <span style="color: #0000FF">&#39;react-d3-library&#39;</span>;
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">import</span> rd3 from <span style="color: #0000FF">&#39;react-d3-library&#39;</span>;
+<span style="color: #000080; font-weight: bold">import</span> node from <span style="color: #0000FF">&#39;d3file&#39;</span>
 <span style="color: #000080; font-weight: bold">const</span> RD3Component = rd3.Component;
 
 <span style="color: #000080; font-weight: bold">var</span> my_First_React_D3_Library_Component = React.createClass({
@@ -191,7 +192,7 @@ d3.json(<span style="color: #0000FF">&quot;flare.json&quot;</span>, <span style=
   },
 
   componentDidMount: <span style="color: #000080; font-weight: bold">function</span>() {
-    <span style="color: #000080; font-weight: bold">this</span>.setState({d3: div});
+    <span style="color: #000080; font-weight: bold">this</span>.setState({d3: node});
   },
 
   render: <span style="color: #000080; font-weight: bold">function</span>() {
