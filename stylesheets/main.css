@@ -9,6 +9,14 @@ ul.nav, .jumbotron h1 {
   font-family: 'Open Sans', sans-serif;
 }
 
+.logo {
+  width: 300px;
+  height: 325px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
 .navbar li a{
   color: #ddd !important;
 }
@@ -174,10 +182,11 @@ footer {
   }
 
   .logo {
-    width: 85%;
-    height: 85%;
+    width: 275px;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
-
 
 }
 
@@ -201,8 +210,11 @@ footer {
   }
 
   .logo {
-    width: 75%;
-    height: 75%;
+    width: 250px;
+    height: 275px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
+
 
 }
