@@ -147,7 +147,7 @@
 d3.json(<span style="color: #0000FF">&quot;flare.json&quot;</span>, <span style="color: #000080; font-weight: bold">function</span>(error, root) {
   <span style="color: #000080; font-weight: bold">if</span> (error) <span style="color: #000080; font-weight: bold">throw</span> error;
 
-<span style="color: #000080; font-weight: bold">var</span> node = svg.selectAll(<span style="color: #0000FF">&quot;.node&quot;</span>)
+<span style="color: #000080; font-weight: bold">var</span> bubbles = svg.selectAll(<span style="color: #0000FF">&quot;.node&quot;</span>)
     .data(bubble.nodes(classes(flare))
     .filter(<span style="color: #000080; font-weight: bold">function</span>(d) { <span style="color: #000080; font-weight: bold">return</span> !d.children; }))
     .enter().append(<span style="color: #0000FF">&quot;g&quot;</span>)
